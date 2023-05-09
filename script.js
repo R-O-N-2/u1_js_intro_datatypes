@@ -110,7 +110,7 @@ let fruits = ["apples", "bananas", "oranges", "dragon fruit", "habanero perpper"
 // > < >= <=
 
 
-let ageInYears = 12
+// let ageInYears = 12
 
 // else is attached & doesn't require a new set of ()
 // binary (truethy falsey)
@@ -155,19 +155,130 @@ let ageInYears = 12
 // else {}
 
 
-const yourMoney = 99
-const catPrice = 100
+// const yourMoney = 99
+// const catPrice = 100
 
-if (yourMoney === catPrice) {
-    console.log('You have just enough to buy a cat!')
-} else if (yourMoney > catPrice) {
-    console.log('You can buy a cat and will have dollars left over.')
-} else {
-    console.log('You cannot buy a cat.  You need more dollars :(')
-}
+// if (yourMoney === catPrice) {
+//    console.log('You have just enough to buy a cat!')
+// } else if (yourMoney > catPrice) {
+//    console.log('You can buy a cat and will have dollars left over.')
+// } else {
+//    console.log('You cannot buy a cat.  You need more dollars :(')
+// }
 
 // if () {}
 // else if () {}
 // else if () {}
 // ....and so on and so on with specified conditions
 // else {}  <-- remainder of possiblities
+
+
+// const dayOfWeek = 'Monday'
+
+// if (dayOfWeek == 'Monday' || dayOfWeek == 'Wednesday') {
+//    console.log (`It's ${dayOfWeek}, better get to class!`)
+// } else if (dayOfWeek == 'Tuesday' || dayOfWeek == "Thursday" || dayOfWeek == "Friday") {
+//    console.log(`Today is ${dayOfWeek}, no class tonight!`)
+// } else if (dayOfWeek === 'Saturday' || dayOfWeek === 'Sunday') {
+//    console.log('Its the weekend!!')
+// } else {
+//    console.log('Please enter another day!')
+// }
+
+
+
+//Ternary statements allow us to write If Else conditions in 1 single line  (ifTrue/ ifFalse)
+//BUT they do not allow as much power as Else If's do
+
+let ageInYears = 2
+
+// ageInYears >= 18 ? console.log('you can vote') : console.log('you cant vot')
+
+
+
+//Switch Statements
+
+const food = 'fish'
+
+// switch (food) {
+//     case 'chicken':
+//        console.log('Ill have the chicken')
+//        break
+//    case 'steak':
+//        console.log('Ill have the steak, rare')
+//        break
+//    case 'fish':
+//        console.log(`I'll have the fish`)
+//        break
+//    default:
+//        console.log('please enter an entree')
+// }
+
+
+// ***** R U L E  O F  3 *********
+// if () {}
+// switch () {}
+// for () {}
+
+
+//********* L O O P S *********
+
+//inside of our () we are putting in 3 sets of instructions
+//where we begin, where we end, how much we are incrementing each time
+
+//FOR LOOP
+
+// for (let i = 0; i <10; i ++) {
+//    console.log(i)
+// }
+
+// for (let i = 110; i >100; i-=3) {
+//    console.log(i)
+// }
+
+
+//WHILE LOOP
+
+// let i = 0;
+// while (i<10) {
+//        console.log(i);
+//    i++
+// }
+
+
+
+const foods = ['tacos', 'ramen', 'doubles', 'ceviche', 'shakshua', 'fish and chips', 'birria', 'falafel']
+
+for (let i = 0; i < food.length; i++) {
+    console.log(`lets have ${foods[i]} for dinner tonight`)
+}
+
+
+
+const wizards = [
+    {name: "Harry Potter", house: "Gryffindor"}, 
+    {name: "Lord Voldomort", house: "Slytherin"}, 
+    {name: "Cedric Diggory", house: "Hufflepuff"},
+    {name: "Luna Lovegood", house: "Ravenclaw"},  
+    {name: "Albus Dumbledor", house: "Gryffindor"}, 
+    {name: "Merlin", house: "Slytherin"}, 
+    {name: "Pomona Sprout", house: "Hufflepuff"}, 
+    {name: "Gilderoy Lockheart", house: "Ravenclaw"}, 
+    {name: "Ron Weasley", house: "Gryffindor"}, 
+    {name: "Severus Snape", house: "Slytherin"}, 
+    {name: "Nymphadora Tonks", house: "Hufflepuff"}, 
+    {name: "Padma Patil", house: "Ravenclaw"}, 
+    {name: "Hermoine Granger", house: "Gryffindor"} 
+   ]
+
+//all wizards
+for (let i=0; i < wizards.length; i++) {
+    console.log(wizards[i].name)
+}
+
+// all wizards in "Slytherin"
+   for (let i = 0; i < wizards.length; i++) {
+    if (wizards[i].house === 'Slytherin') {
+        console.log(wizards[i].name)
+    }
+}
